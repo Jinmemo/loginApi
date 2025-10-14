@@ -7,6 +7,11 @@
 <title>네이버 로그인</title>
 </head>
 <body>
-	11
+	<h1>
+		Controller 연동 테스트
+	</h1>
+	<p>
+		<%= request.getAttribute("message") %>	
+	</p>
 </body>
 </html>
