@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>loginApi</groupId>
+  <artifactId>loginApi</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+   <!-- ✅ 의존성 추가 -->
+  <dependencies>
+    <!-- Lombok (Getter, Setter, Builder 등 편리한 코드 생성을 위한 도구) -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.34</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Apache Tomcat 9.0.111 -->
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-catalina</artifactId>
+      <version>9.0.111</version>
+    </dependency>
+
+    <!-- Tomcat JULI (LogFactory 클래스 포함) -->
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-juli</artifactId>
+      <version>9.0.111</version>
+    </dependency>
+  </dependencies>
+  
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>16</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
