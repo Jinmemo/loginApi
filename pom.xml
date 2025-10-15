@@ -27,7 +27,22 @@
       <artifactId>tomcat-juli</artifactId>
       <version>9.0.111</version>
     </dependency>
+    
+    <dependency>
+	    <groupId>com.googlecode.json-simple</groupId>
+	    <artifactId>json-simple</artifactId>
+	    <version>1.1.1</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>jstl</artifactId>
+	    <version>1.2</version>
+	</dependency>
+	
   </dependencies>
+  
+  
   
   
   <build>
