@@ -1,4 +1,4 @@
-package naver.controller;
+package login.controller;
 
 import java.io.IOException;
 
@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/naverView")
-public class naverApiController extends HttpServlet {
+@WebServlet("/loginView")
+public class loginApiController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Override
@@ -20,7 +20,7 @@ public class naverApiController extends HttpServlet {
 		request.setAttribute("message", "JSP, Controller 연동 테스트");
 		
 		// JSP 포워딩
-		request.getRequestDispatcher("/WEB-INF/naver/naverApiView.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/login/loginApiView.jsp").forward(request, response);
 	}
 	
 }
