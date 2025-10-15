@@ -12,7 +12,7 @@
 				
 				<!-- Naver -->
 				<button id="naverButton"
-					onclick="location.href='https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=rmJ2NmRjykTGFlD75Tpe&redirect_uri=http://localhost:8090/loginApi/loginCallBackView&state=testState'"
+					onclick="location.href='https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=rmJ2NmRjykTGFlD75Tpe&redirect_uri=http://localhost:8090/loginApi/loginCallBackView&state=naver'"
 					style="width: 280px; height: 55px; background-color: #03C75A; border: none; color: white; font-size: 17px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
 					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white" style="margin-right:10px;">
 						<path d="M3 3h6.586L15 11.586V3h6v18h-6.586L9 12.414V21H3z"/>
