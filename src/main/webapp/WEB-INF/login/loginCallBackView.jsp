@@ -17,15 +17,28 @@
             <p><b>code:</b> ${code}</p>
             <p><b>state:</b> ${state}</p>
             <br>
-            <h3>네이버 사용자 정보</h3>
-            <p><b>ID:</b> ${id}</p>
-            <p><b>이름:</b> ${name}</p>
-            <p><b>성별:</b> ${gender}</p>
-            <p><b>생일:</b> ${birthday}</p>
-            <p style="color: green;">로그인 성공 🎉</p>
+            <h3>${state} 사용자 정보</h3>
+
+            <c:if test="${not empty id}">
+                <p><b>ID:</b> ${id}</p>
+            </c:if>
+            <c:if test="${not empty name}">
+                <p><b>이름:</b> ${name}</p>
+            </c:if>
+            <c:if test="${not empty gender}">
+                <p><b>성별:</b> ${gender}</p>
+            </c:if>
+            <c:if test="${not empty birthday}">
+                <p><b>생일:</b> ${birthday}</p>
+            </c:if>
+            <c:if test="${not empty email}">
+                <p><b>이메일:</b> ${email}</p>
+            </c:if>
+
+            <p style="color: green;">로그인 성공</p>
         </c:when>
         <c:otherwise>
-            <p style="color: red;">로그인 실패 ❌</p>
+            <p style="color: red;">로그인 실패</p>
             <p>${error}</p>
         </c:otherwise>
     </c:choose>

@@ -22,7 +22,8 @@
 
 	
 				<!-- Kakao -->
-				<button id="kakaoButton" 
+				<button id="kakaoButton"
+					onclick="location.href='https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=c731e5a550da589cad0bb73e13fc2f5b&redirect_uri=http://localhost:8090/loginApi/loginCallBackView&state=kakao'"
 					style="width: 280px; height: 55px; background-color: #FEE500; border: none; color: #3C1E1E; font-size: 17px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
 					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#3C1E1E" style="margin-right:10px;">
 						<path d="M12 3C6.477 3 2 6.917 2 11.727c0 2.84 1.737 5.352 4.404 6.958L5.5 21.5l3.517-1.98c.952.232 1.969.358 3.013.358 5.523 0 10-3.918 10-8.727C22 6.917 17.523 3 12 3z"/>
@@ -31,7 +32,8 @@
 				</button>
 	
 				<!-- Google -->
-				<button id="googleButton" 
+				<button id="googleButton"
+					onclick="location.href='https://accounts.google.com/o/oauth2/v2/auth?client_id=524802389903-6chv0ahs8hmh6tq3a7kmnok5hke67krg.apps.googleusercontent.com&redirect_uri=http://localhost:8090/loginApi/loginCallBackView&response_type=code&scope=openid%20email%20profile&state=google'"
 					style="width: 280px; height: 55px; background-color: white; border: 1px solid #ccc; color: #555; font-size: 17px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
 					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48" style="margin-right:10px;">
 						<path fill="#EA4335" d="M24 9.5c3.54 0 6.38 1.46 8.31 2.68l6.13-5.94C34.69 3.14 29.77 1 24 1 14.78 1 7.07 6.92 3.69 14.88l7.58 5.89C12.7 13.11 17.91 9.5 24 9.5z"/>
